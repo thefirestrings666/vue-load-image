@@ -1,9 +1,11 @@
 <template>
   <div class="vue-load-image">
+    <transition>
     <slot
       v-if="status === 'loaded'"
       name="image"
     />
+    </transition>
     <slot
       v-else-if="status === 'failed'"
       name="error"
