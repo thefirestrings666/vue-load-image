@@ -1,7 +1,7 @@
 <template>
   <div class="vue-load-image">
     <transition
-      enter-active-class="animated tada"
+      enter-class="animated tada"
     >
       <slot
         v-if="status === 'loaded'"
